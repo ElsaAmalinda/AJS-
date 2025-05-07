@@ -1,0 +1,43 @@
+<form action="proses_alamat.php" method="POST">
+    <div>
+        <label for="dusun">Dusun:</label>
+        <select id="dusun" name="dusun" onchange="updateDesa()">
+            <option value="">Pilih Dusun</option>
+            <!-- Daftar Dusun -->
+        </select>
+    </div>
+    <div>
+        <label for="desa">Desa:</label>
+        <select id="desa" name="desa" onchange="updateKecamatan()">
+            <option value="">Pilih Desa</option>
+            <!-- Daftar Desa di-update berdasarkan dusun -->
+        </select>
+    </div>
+    <div>
+        <label for="kecamatan">Kecamatan:</label>
+        <select id="kecamatan" name="kecamatan" onchange="updateKabupaten()">
+            <option value="">Pilih Kecamatan</option>
+            <!-- Daftar Kecamatan di-update berdasarkan desa -->
+        </select>
+    </div>
+    <div>
+        <label for="kabupaten">Kabupaten/Kota:</label>
+        <select id="kabupaten" name="kabupaten">
+            <option value="">Pilih Kabupaten/Kota</option>
+            <!-- Daftar Kabupaten di-update berdasarkan kecamatan -->
+        </select>
+    </div>
+    <button type="submit">Simpan Alamat</button>
+</form>
+
+<script>
+    function updateDesa() {
+        // Ambil desa berdasarkan dusun yang dipilih
+    }
+    function updateKecamatan() {
+        // Ambil kecamatan berdasarkan desa yang dipilih
+    }
+    function updateKabupaten() {
+        // Ambil kabupaten berdasarkan kecamatan yang dipilih
+    }
+</script>
